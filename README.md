@@ -1,4 +1,4 @@
-# Ctrip Assistant - AI 智能旅行助手
+# 🛫 Ctrip Assistant - AI 智能旅行助手
 
 <div align="center">
   
@@ -12,8 +12,7 @@
 </div>
 
 ---
-
-## 目录
+## 📖 目录
 
 - [功能特性](#功能特性)
 - [技术栈](#技术栈)
@@ -22,24 +21,26 @@
 - [使用指南](#使用指南)
 - [项目结构](#项目结构)
 - [配置说明](#配置说明)
-- [API文档](#api文档)
+- [API 文档](#api文档)
 - [开发指南](#开发指南)
 - [常见问题](#常见问题)
 - [贡献指南](#贡献指南)
 - [许可证](#许可证)
 
-## 功能特性
+<a name="功能特性"></a>
+## ✨ 功能特性
 
-- **航班管理** - 搜索、预订、更新和取消航班
-- **酒店预订** - 搜索和管理酒店预订
-- **租车服务** - 预订和管理租车服务
-- **旅行推荐** - 获取个性化的旅行建议
-- **AI 驱动** - 自然语言交互的多智能体工作流
-- **人机协作** - 敏感操作需要用户确认
-- **用户认证** - JWT + OAuth2 安全认证
-- **状态管理** - LangGraph 检查点持久化
+- 🛬 **航班管理** - 搜索、预订、更新和取消航班
+- 🏨 **酒店预订** - 搜索和管理酒店预订
+- 🚗 **租车服务** - 预订和管理租车服务
+- 🗺️ **旅行推荐** - 获取个性化的旅行建议
+- 🤖 **AI 驱动** - 自然语言交互的多智能体工作流
+- 👤 **人机协作** - 敏感操作需要用户确认
+- 🔐 **用户认证** - JWT + OAuth2 安全认证
+- 📊 **状态管理** - LangGraph 检查点持久化
 
-## 技术栈
+<a name="技术栈"></a>
+## 🛠️ 技术栈
 
 | 类别 | 技术 |
 |------|------|
@@ -51,7 +52,8 @@
 | 配置管理 | Dynaconf |
 | 搜索工具 | Tavily Search API |
 
-## 快速开始
+<a name="快速开始"></a>
+## 🚀 快速开始
 
 ### 前置要求
 
@@ -85,7 +87,8 @@ python main.py
 
 访问 http://127.0.0.1:8000/docs 查看 API 文档
 
-## 安装部署
+<a name="安装部署"></a>
+## 📦 安装部署
 
 ### 详细安装步骤
 
@@ -227,11 +230,12 @@ uvicorn main:Server.app --host 0.0.0.0 --port 8000
 
 ### 访问应用
 
-- API 文档: http://127.0.0.1:8000/docs
-- 备用文档: http://127.0.0.1:8000/redoc
-- API 基础地址: http://127.0.0.1:8000/api
+- 📚 API 文档: http://127.0.0.1:8000/docs
+- 📖 备用文档: http://127.0.0.1:8000/redoc
+- 🌐 API 基础地址: http://127.0.0.1:8000/api
 
-## 使用指南
+<a name="使用指南"></a>
+## 📋 使用指南
 
 ### 1. 用户注册
 
@@ -307,7 +311,8 @@ curl -X POST "http://127.0.0.1:8000/api/graph/" \
 助手: 请告诉我您的租车需求...
 ```
 
-## 项目结构
+<a name="项目结构"></a>
+## 📁 项目结构
 
 ```
 Ctrip-Assistant/
@@ -362,7 +367,8 @@ Ctrip-Assistant/
     └── trip_tools.py     # 旅行推荐工具
 ```
 
-## 配置说明
+<a name="配置说明"></a>
+## ⚙️ 配置说明
 
 ### 必需配置
 
@@ -387,7 +393,8 @@ python -c "import secrets; print(secrets.token_urlsafe(32))"
 | `WHITE_LIST` | API 白名单 | 登录注册接口 |
 | `DEFAULT_PASSWORD` | 新用户默认密码 | - |
 
-## API文档
+<a name="api文档"></a>
+## 📚 API 文档
 
 ### 认证接口
 
@@ -414,7 +421,8 @@ python -c "import secrets; print(secrets.token_urlsafe(32))"
 
 详细 API 文档请访问：http://127.0.0.1:8000/docs
 
-## 开发指南
+<a name="开发指南"></a>
+## 💻 开发指南
 
 ### 运行测试
 
@@ -436,7 +444,8 @@ mypy .
 
 详见 [AGENTS.md](AGENTS.md) 文件
 
-## 常见问题
+<a name="常见问题"></a>
+## ❓ 常见问题
 
 <details>
 <summary><b>1. 如何获取 OpenAI API Key？</b></summary>
@@ -465,7 +474,8 @@ mypy .
 直接修改数据库中的密码字段（需要哈希处理），或删除用户重新注册
 </details>
 
-## 贡献指南
+<a name="贡献指南"></a>
+## 🤝 贡献指南
 
 欢迎贡献代码！请遵循以下步骤：
 
@@ -475,15 +485,16 @@ mypy .
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
 5. 创建 Pull Request
 
-## 许可证
+<a name="许可证"></a>
+## 📄 许可证
 
 本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
 
-## 联系方式
+## 📮 联系方式
 
 如有问题或建议，请创建 [Issue](https://github.com/ranger52065/Ctrip-Assistant/issues)
 
-## 致谢
+## 🙏 致谢
 
 - [FastAPI](https://fastapi.tiangolo.com/) - 现代化的 Web 框架
 - [LangChain](https://www.langchain.com/) - LLM 应用开发框架
@@ -493,4 +504,4 @@ mypy .
 
 ---
 
-如果这个项目对你有帮助，请给一个 Star！
+⭐ 如果这个项目对你有帮助，请给一个 Star！
